@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tencent.wxcloudrun.dao.SwitchersMapper">
+
+    <resultMap id="switchersMapper" type="com.tencent.wxcloudrun.model.Switcher">
+        <id property="id" column="id"/>
+        <result property="switchtype" column="switchtype"/>
+    </resultMap>
+
+    <select id="getSwitcher" resultMap="switchersMapper" parameterType="java.lang.Integer">
+        SELECT `switchtype`
+        FROM Switchers
+        WHERE id = #{id}
+    </select>
+
+</mapper>
