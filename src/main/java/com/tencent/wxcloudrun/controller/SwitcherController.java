@@ -36,7 +36,7 @@ public class SwitcherController {
     Optional<Switcher> switcher = switcherService.getSwitcher(1);
     Integer type = 0;
     if (switcher.isPresent()) {
-      type = switcher.get().getSwithctype();
+      type = switcher.get().getSwitchtype();
     }
 
     return ApiResponse.ok(type);
