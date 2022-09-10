@@ -10,5 +10,5 @@ public class Switcher implements Serializable {
 
   private Integer id;
 
-  private Integer swithctype;
+  private Integer switchtype;
 }

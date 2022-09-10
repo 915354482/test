@@ -8,7 +8,7 @@
     </resultMap>
 
     <select id="getSwitcher" resultMap="switchersMapper" parameterType="java.lang.Integer">
-        SELECT `id`, `switchtype`
+        SELECT `switchtype`
         FROM Switchers
         WHERE id = #{id}
     </select>
